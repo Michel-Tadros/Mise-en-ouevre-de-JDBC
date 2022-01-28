@@ -12,6 +12,7 @@
 - Utiliser l'URL suivant pour se connecter au databse: "jdbc:mysql://localhost:3306/javadb","root","".
 - Télécharger mysql-connector.jar.
 - L'insérer dans le projet IntelliJ en cliquant sur File->Project Structure->Libraries->+->ajouter mysql-connector.jar ![image](https://user-images.githubusercontent.com/89968019/151581620-bfd8b50b-3c68-4f89-a9a7-d8f2dfe04359.png)
+- Pour pouvoir se connecter a une mysql database et envoyer des requetes sql dans java : `import java.sql.*;`.
 - Créer une connection: `Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/javadb","root","")`.
 - Créer un statement: `Statement stmt=con.createStatement();`.
 - Créer un query : `ResultSet rs=stmt.executeQuery("select * from employe");`.
